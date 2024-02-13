@@ -1,0 +1,71 @@
+.header-menu a {
+    font-weight: 600;
+    color: #fff;
+}
+
+.header-menu a + a {
+    margin-left: 40px;
+}
+header {
+    padding: 40px 0;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    header {
+        padding: 20px 0;
+    }
+    
+    header .navbar-toggler {
+        border: none;
+        background: #9C7339;
+        padding: 5px 5px;
+        border-radius: 0;
+    }
+    
+    header .navbar-toggler .navbar-toggler-icon {
+        filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(183deg) brightness(103%) contrast(100%);
+        width: 24px;
+        height: 24px;
+    }
+    header .navbar-collapse {
+        position: fixed;
+        height: 100vh !important;
+        top: 0;
+        padding-top: 20px;
+        background: #9c733a;
+        z-index: 999;
+        display: inline-block !important;
+        width: 290px;
+        transition: all 0.3s ease 0s;
+        left: -290px;
+    }
+    
+    header .navbar-collapse a {
+        padding: 10px 20px !important;
+        margin: 0 !important;
+    }
+    
+    header .navbar-collapse.show {
+        left: 0;
+    }
+    .menu-logo {
+        border-bottom: 1px solid #fff;
+    }
+    
+    .menu-logo a {
+        width: 100%;
+    }
+    header .navbar-collapse .navbar-toggler {
+        padding: 0;
+        background: transparent;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    
+    
+    
+    header .navbar-collapse .navbar-toggler img {width: 20px;}
+}

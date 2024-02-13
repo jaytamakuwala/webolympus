@@ -1,0 +1,161 @@
+body {
+    color: #ffffff;
+}
+
+.common-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    letter-spacing: 1px;
+    border: 1px solid #fff;
+    font-weight: bold;
+    padding: 11px 35px;
+    overflow: hidden;
+}
+
+.common-button img {
+    margin-left: 10px;
+}
+
+.common-button:hover {
+    background: #9C7339;
+    border-color: #9C7339;
+}
+
+.common-button:before {
+    content: "";
+    background-image: url(../../Images/btn-layer.svg);
+    width: 295px;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.common-button:after {
+    content: "";
+    background-image: url(../../Images/btn-layer.svg);
+    width: 295px;
+    height: 8px;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    top: 0;
+}
+.common-button:hover:before {
+    left: -60px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+}
+.common-button:hover:after {
+    right: -60px;
+    opacity: 1;
+    
+}
+
+h1 {
+    font-size: 140px;
+    line-height: 160px;
+}
+
+h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.service-menu-box h6 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.service-menu-box ul li {
+    position: relative;
+    padding-left: 17px;
+}
+
+.service-menu-box ul li:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #9C7339;
+    left: 0;
+    top: 10px;
+    border-radius: 100%;
+}
+
+.service-menu-box ul li + li {
+    margin-top: 6px;
+}
+
+.service-menu-box ul li a {
+    color: #fff;
+}
+
+.service-menu-box a:hover {
+    color: #9C7339;
+}
+
+.service-menu-box {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    height: 100%;
+    padding-bottom: 35px;
+}
+
+.service-img {
+    margin-top: -80px;
+}
+
+@media only screen and (max-width: 1199px) {
+h1 {
+    font-size: 80px;
+    line-height: normal;
+}
+h2 {
+    font-size: 48px;
+}
+.service-menu-box h6 {
+    font-size: 30px;
+}
+}
+@media only screen and (max-width: 991px) {
+h1 {
+    font-size: 60px;
+    line-height: normal;
+}
+h2 {
+    font-size: 38px;
+}
+.common-button {
+    font-size: 14px;
+    padding: 10px 20px;
+}
+.service-img {
+    margin-top: -30px;
+}
+}
+@media only screen and (max-width: 767px) {
+h1 {
+    font-size: 40px;
+    line-height: normal;
+}
+h2 {
+    font-size: 30px;
+}
+.service-menu-box h6 {
+    font-size: 24px;
+}
+.service-menu-box {
+    padding: 20px 0;
+}
+
+.service-menu-box h6 {
+    margin-bottom: 12px;
+}
+
+img.service-img {
+    margin: 30px 0 0 0;
+}
+}
